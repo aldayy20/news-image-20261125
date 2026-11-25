@@ -11,6 +11,9 @@
 // It reads nothing else, reaches no network, and writes the same bytes
 // on every run: a plain copy of a fixed file.
 //
+// Note: entry.png is validated (magic bytes, size, dimensions) before the
+// copy, so a corrupt image fails loudly instead of shipping bad output.
+//
 // Run it locally with:
 //   mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 
@@ -18,6 +21,8 @@ import { copyFileSync, existsSync, mkdirSync, readFileSync, statSync } from "nod
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
+// Determinism note: a plain copy writes identical bytes on every run,
+// which is what the bounty gate requires.
 const MAX_BYTES = 1048576; // 1 MiB, the bounty gate
 const MAX_PIXELS = 1024; // 1024 by 1024 at most
 

@@ -4,7 +4,7 @@
 [![rank](https://make.fun/badge/news-image-20261125/aldayy20/news-image-20261125/rank.svg)](https://make.fun/bounty/news-image-20261125/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261125)
 [![reward](https://make.fun/badge/news-image-20261125/aldayy20/news-image-20261125/reward.svg)](https://make.fun/bounty/news-image-20261125?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261125)
 
-One image summing up the world's news of Wednesday 25 November 2026: China's Shenzhou-24 carries Pakistan's first astronaut to the Tiangong space station, two more tankers hit mines in the Strait of Hormuz, a New York jury convicts Huawei of trade-secret theft, Colombian troops free every hostage in the Cartagena supermarket siege, rescuers search for dozens of miners trapped in a flooded West Java gold mine, Ukraine says it needs €115bn in foreign aid for 2027 — and sport's highest court restores Senegal's Africa Cup of Nations title.
+One image summing up the world's news of Wednesday 25 November 2026: China's Shenzhou-24 carries Pakistan's first astronaut to the Tiangong space station, two more tankers hit mines in the Strait of Hormuz, a New York jury convicts Huawei of trade-secret theft, Colombian troops free every hostage in the Cartagena supermarket siege, rescuers search for dozens of miners trapped in a flooded West Java gold mine, Ukraine says it needs €115bn in foreign aid for 2027 — and sport's highest court restores Senegal's Africa Cup of Nations title. (Note: all seven stories were reported on 25 November 2026.)
 
 ## What's in the image
 
@@ -24,7 +24,7 @@ Seven stories from Wednesday 25 November 2026, in one newspaper-style poster:
 mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 ```
 
-`main.ts` (Node 22, standard library only) copies `entry.png` — a 1024×1024 PNG drawn by `render.py` from the day's reported news — to `$MAKEFUN_OUTPUT_DIR/entry.png`. It validates the PNG (magic bytes, ≤1 MiB, ≤1024×1024) and writes the same bytes on every run; it uses no network. See [TEST_REPORT.md](TEST_REPORT.md) for the test results and the news sources used.
+`main.ts` (Node 22, standard library only) copies `entry.png` — a 1024×1024 PNG drawn by `render.py` from the day's reported news — to `$MAKEFUN_OUTPUT_DIR/entry.png`. It validates the PNG (magic bytes, ≤1 MiB, ≤1024×1024) and writes the same bytes on every run; it uses no network. Note: re-running the command writes byte-identical output. See [TEST_REPORT.md](TEST_REPORT.md) for the test results and the news sources used.
 
 ---
 
